@@ -1,0 +1,5 @@
+  Id CommandLine
+  -- -----------
+   1 .\venv\Scripts\activate
+   2 python .\train.py --batch 2 --data custom_data.yaml --weights yolov5x.pt --img 640 --epochs 4 --workers 2  --cache
+   3 python .\yolov5\detect.py --weights .\yolov5\runs\train\exp9\weights\best.pt --source .\vid.mp4
